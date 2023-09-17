@@ -104,7 +104,7 @@ class GithubClient:
             for pr_json in body:
                 pr = GithubPull(pr_json)
 
-                #self.get_timeline(pr.number)
+                self.get_timeline(pr.number)
 
                 prs.append(pr)
 
